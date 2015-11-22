@@ -9,7 +9,7 @@
 #import "UIView+IBINSPECTABLE.h"
 
 @implementation UIView (IBINSPECTABLE)
-@dynamic cornerRadius, borderWidth, shadowOffset, shadowOpacity, shadowRadius, masksToBounds;
+@dynamic cornerRadius, borderWidth, shadowOffset, shadowOpacity, shadowRadius, masksToBounds, borderColor;
 
 - (void)setCornerRadius:(CGFloat)cornerRadius {
     self.layer.cornerRadius = cornerRadius;
@@ -33,6 +33,10 @@
 
 - (void)setMasksToBounds:(BOOL)masksToBounds {
     self.layer.masksToBounds = masksToBounds;
+}
+
+- (void)setBorderColor:(UIColor *)borderColor {
+    self.layer.borderColor = borderColor.CGColor;
 }
 
 @end

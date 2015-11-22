@@ -16,5 +16,6 @@
 @property (nonatomic) IBInspectable CGSize shadowOffset;
 @property (nonatomic) IBInspectable CGFloat shadowRadius;
 @property (nonatomic) IBInspectable CGFloat shadowOpacity;
+@property (nonatomic, strong) IBInspectable UIColor *borderColor;
 
 @end
